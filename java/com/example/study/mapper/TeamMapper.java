@@ -1,6 +1,6 @@
 package com.example.study.mapper;
 
-import com.example.study.entity.StuInfo;
+import com.example.study.entity.Team;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 
 /**
@@ -11,6 +11,6 @@ import com.baomidou.mybatisplus.core.mapper.BaseMapper;
  * @author caorongwu
  * @since 2020-08-11
  */
-public interface StuInfoMapper extends BaseMapper<StuInfo> {
+public interface TeamMapper extends BaseMapper<Team> {
 
 }

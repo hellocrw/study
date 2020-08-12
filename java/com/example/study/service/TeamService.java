@@ -1,6 +1,6 @@
 package com.example.study.service;
 
-import com.example.study.entity.StuInfo;
+import com.example.study.entity.Team;
 import com.baomidou.mybatisplus.extension.service.IService;
 
 /**
@@ -11,6 +11,6 @@ import com.baomidou.mybatisplus.extension.service.IService;
  * @author caorongwu
  * @since 2020-08-11
  */
-public interface StuInfoService extends IService<StuInfo> {
+public interface TeamService extends IService<Team> {
 
 }

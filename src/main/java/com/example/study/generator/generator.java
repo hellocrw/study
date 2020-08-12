@@ -1,4 +1,4 @@
-package com.example.study;
+package com.example.study.generator;
 
 import com.baomidou.mybatisplus.annotation.DbType;
 import com.baomidou.mybatisplus.annotation.IdType;
@@ -18,7 +18,7 @@ public class generator {
         //是否支持AR模式
         config.setActiveRecord(true)
                 .setAuthor("caorongwu") //作者
-                .setOutputDir("D:\\project\\temp\\study\\src\\main\\java")  //生成路径
+                .setOutputDir("E:\\code\\study\\src\\main\\java")  //生成路径
                 .setFileOverride(true)//是否文件覆盖，如果多次
                 .setServiceName("%sService") //设置生成的service接口名首字母是否为I
                 .setIdType(IdType.AUTO) //主键策略
@@ -28,7 +28,7 @@ public class generator {
         //2. 数据源配置
         DataSourceConfig dsConfig = new DataSourceConfig();
         dsConfig.setDbType(DbType.MYSQL)
-                .setUrl("jdbc:mysql://localhost:3306/study?characterEncoding=utf-8&useSSL=true&serverTimezone=Asia/Shanghai")
+                .setUrl("jdbc:mysql://120.79.191.236:3306/team?characterEncoding=utf-8&useSSL=true&serverTimezone=Asia/Shanghai")
                 .setDriverName("com.mysql.cj.jdbc.Driver")
                 .setUsername("root")
                 .setPassword("123456");
@@ -37,7 +37,7 @@ public class generator {
         stConfig.setCapitalMode(true) // 全局大写命名
 //                setDbColumnUnderline(true) //表名 字段名 是否使用下滑线命名
                 .setNaming(NamingStrategy.underline_to_camel) // 数据库表映射到实体的命名策略
-                .setInclude("stu_info"); //生成的表
+                .setInclude("task"); //生成的表
 //                .setTablePrefix("stu_"); // 表前缀
         //4.包名策略
         PackageConfig pkConfig = new PackageConfig();
